@@ -2,3 +2,6 @@
 
 [window]
 opacity = 0.9
+
+[terminal]
+shell = "nu.exe"
