@@ -7,7 +7,7 @@ if (-not $env:XDG_CONFIG_HOME) {
 Write-Host "XDG_CONFIG_HOME is set to $env:XDG_CONFIG_HOME" -ForegroundColor Green
 
 # copy env\.config\nushell to XDG_CONFIG_HOME
-Copy-Item -Path "$env:USERPROFILE\.config\nushell" -Destination $env:XDG_CONFIG_HOME -Recurse -Force
+Copy-Item -Path ".\env\.config\nushell" -Destination $env:XDG_CONFIG_HOME -Recurse -Force
 
 Write-Host "Nushell setup complete!" -ForegroundColor Green
 

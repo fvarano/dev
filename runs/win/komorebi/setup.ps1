@@ -16,10 +16,10 @@ if (-not (Test-Path $env:KOMOREBI_CONFIG_HOME)) {
 }
 
 # copy env\.config\komorebi to XDG_CONFIG_HOME
-Copy-Item -Path "$env:USERPROFILE\.config\komorebi" -Destination $env:XDG_CONFIG_HOME -Recurse -Force
+Copy-Item -Path ".\env\.config\komorebi" -Destination $env:XDG_CONFIG_HOME -Recurse -Force
 
 # copy env\.config\whkd to XDG_CONFIG_HOME
-Copy-Item -Path "$env:USERPROFILE\.config\whkd" -Destination $env:XDG_CONFIG_HOME -Recurse -Force
+Copy-Item -Path ".\env\.config\whkdrc" -Destination $env:XDG_CONFIG_HOME -Recurse -Force
 
 Write-Host "Komorebi setup complete!" -ForegroundColor Green
 

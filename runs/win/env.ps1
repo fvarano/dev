@@ -7,3 +7,6 @@ $env:XDG_CONFIG_HOME = "$env:USERPROFILE\.config"
 
 # launch nushell setup script
 & "$PSScriptRoot\nushell\setup.ps1"
+
+# launch nushell setup script
+& "$PSScriptRoot\alacritty\setup.ps1"
