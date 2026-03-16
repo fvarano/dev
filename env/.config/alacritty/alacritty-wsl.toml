@@ -1,0 +1,5 @@
+[general]
+import = ["~/.config/alacritty/alacritty.toml"]
+
+[terminal]
+shell = { program = 'C:\Program Files\WSL\wsl.exe', args = ["--cd ~"] }
