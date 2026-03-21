@@ -869,5 +869,6 @@ $env.config = {
     ]
 }
 
-alias iwr = Invoke-WebRequest   
+alias iwr = Invoke-WebRequest
 alias iex = Invoke-Expression
+alias cat = open
