@@ -12,9 +12,7 @@ install_chezmoi() {
         return
     fi
 
-    if command -v apt-get &>/dev/null; then
-        sudo apt-get update && sudo apt-get install -y chezmoi
-    elif command -v pacman &>/dev/null; then
+    if command -v pacman &>/dev/null; then
         sudo pacman -S --noconfirm chezmoi
     elif command -v dnf &>/dev/null; then
         sudo dnf install -y chezmoi
@@ -22,7 +20,7 @@ install_chezmoi() {
         brew install chezmoi
     else
         echo "Installing chezmoi via script..."
-        curl -sfL https://git.io/chezmoi | sh
+        sh -c "$(curl -fsLS get.chezmoi.io)"
     fi
 }
 
